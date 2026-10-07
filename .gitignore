@@ -1,0 +1,17 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+.env
+
+# Reports / generated
+allure-report/
+allure-results/
+cucumber_report.html
+
+# Auth state (may contain session tokens)
+state.json
