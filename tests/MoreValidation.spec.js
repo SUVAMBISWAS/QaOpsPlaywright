@@ -28,10 +28,11 @@ console.log(text.split(" ")[1]);
 
 
 
-test.only("visual testing", async({page})=>
+test("visual testing", async({page})=>
 
 
 {
+test.skip(!!process.env.CI, "visual baseline is Windows-only");
 
 await page.goto("https://google.com");
 
